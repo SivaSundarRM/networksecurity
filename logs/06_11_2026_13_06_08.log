@@ -1,0 +1,3 @@
+[ 2026-06-11 13:06:14,844 ] 24 networksecurity.logging.logger - INFO - MongoDB client created successfully
+[ 2026-06-11 13:06:14,938 ] 33 networksecurity.logging.logger - INFO - CSV file converted to JSON successfully
+[ 2026-06-11 13:06:20,189 ] 49 networksecurity.logging.logger - INFO - Data inserted into MongoDB successfully
