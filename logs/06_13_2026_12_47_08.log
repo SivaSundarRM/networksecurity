@@ -1,0 +1,2 @@
+[ 2026-06-13 12:47:11,014 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2026-06-13 12:47:11,015 ] 28 root - INFO - Exporting collection data as pandas dataframe

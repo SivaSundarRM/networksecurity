@@ -1,0 +1,2 @@
+[ 2026-06-13 13:43:21,883 ] 21 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Data Ingestion started <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[ 2026-06-13 13:43:21,884 ] 50 root - INFO - Exporting MongoDB collection as DataFrame
