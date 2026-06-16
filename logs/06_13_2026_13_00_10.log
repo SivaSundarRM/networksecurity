@@ -1,3 +1,0 @@
-[ 2026-06-13 13:00:12,531 ] 22 root - INFO - >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Data Ingestion log started.<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-[ 2026-06-13 13:00:12,531 ] 38 root - INFO - Exporting collection data as pandas dataframe
-[ 2026-06-13 13:00:31,504 ] 51 root - INFO - Saving data in feature store folder
