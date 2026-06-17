@@ -1,0 +1,22 @@
+[ 2026-06-16 15:02:24,429 ] 20 root - INFO - Initiate the data ingestion
+[ 2026-06-16 15:02:31,355 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2026-06-16 15:02:31,355 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-16 15:02:31,356 ] 75 root - INFO - Exporting train and test file path.
+[ 2026-06-16 15:02:31,389 ] 84 root - INFO - Exported train and test file path.
+[ 2026-06-16 15:02:31,389 ] 22 root - INFO - Data Initiation Completed
+[ 2026-06-16 15:02:31,392 ] 27 root - INFO - Initiate the data Validation
+[ 2026-06-16 15:02:31,470 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-16 15:02:31,474 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-16 15:02:31,474 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-16 15:02:31,474 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-16 15:02:31,584 ] 29 root - INFO - data Validation Completed
+[ 2026-06-16 15:02:31,584 ] 32 root - INFO - data Transformation started
+[ 2026-06-16 15:02:31,584 ] 40 root - INFO - Initiating data transformation
+[ 2026-06-16 15:02:31,584 ] 42 root - INFO - Reading the train and test file
+[ 2026-06-16 15:02:31,598 ] 46 root - INFO - Splitting input and target feature from train and test dataframe
+[ 2026-06-16 15:02:31,599 ] 54 root - INFO - Applying KNN Imputer to impute missing values in train and test data
+[ 2026-06-16 15:02:31,599 ] 27 root - INFO - Entering the get_data_transformer_object method of Data_Transformation class
+[ 2026-06-16 15:02:31,621 ] 67 root - INFO - Saving transformed train and test array
+[ 2026-06-16 15:02:31,630 ] 36 root - INFO - data Transformation completed
+[ 2026-06-16 15:02:31,630 ] 38 root - INFO - Model Training sstared
+[ 2026-06-16 15:02:31,630 ] 226 root - INFO - Initiating model trainer
