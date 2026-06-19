@@ -43,6 +43,9 @@ from networksecurity.utils.main_utils.utils import (
     evaluate_model,
 )
 import mlflow
+import dagshub
+dagshub.init(repo_owner='SivaSundarRM', repo_name='networksecurity', mlflow=True)
+
 
 class ModelTrainer:
     def __init__(

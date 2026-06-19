@@ -46,6 +46,7 @@ class DataTransformation:
             logging.info("Splitting input and target feature from train and test dataframe")
             x_train=train_df.drop(columns=[TARGET_COLUMN],axis=1)
             y_train=train_df[TARGET_COLUMN]
+            y_train = y_train.replace(-1, 0)
 
             x_test=test_df.drop(columns=[TARGET_COLUMN],axis=1)
             y_test=test_df[TARGET_COLUMN]
@@ -57,7 +58,9 @@ class DataTransformation:
             x_test=knn_imputer.transform(x_test)
 
             train_arr=np.c_[x_train,y_train]
-            test_arr=np.c_[x_test,y_test]
+            test_arr=np.c_[x_test,y_test]   
+            
+    
 
             # transformed_train_dir=os.path.dirname(self.data_transformation_config.transformed_train_file_path)
             # transformed_test_dir=os.path.dirname(self.data_transformation_config.transformed_test_file_path)
@@ -68,7 +71,8 @@ class DataTransformation:
             save_numpy_array_data(file_path=self.data_transformation_config.transformed_train_file_path,array=train_arr)
             save_numpy_array_data(file_path=self.data_transformation_config.transformed_test_file_path,array=test_arr)
             save_object(file_path=self.data_transformation_config.transformed_object_file_path,obj=knn_imputer)
-            
+             
+            save_object("final_model/knn_imputer.pkl",knn_imputer)
             data_transformation_artifact=DataTransformationArtifact(
                 transformed_train_file_path=self.data_transformation_config.transformed_train_file_path,
                 transformed_test_file_path=self.data_transformation_config.transformed_test_file_path,

@@ -1,0 +1,60 @@
+[ 2026-06-18 21:08:35,081 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-06-18 21:08:35,091 ] 107 dagshub - INFO - Accessing as SivaSundarRM
+[ 2026-06-18 21:08:36,148 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/SivaSundarRM/networksecurity "HTTP/1.1 200 OK"
+[ 2026-06-18 21:08:37,275 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2026-06-18 21:08:37,278 ] 107 dagshub - INFO - Initialized MLflow to track repo "SivaSundarRM/networksecurity"
+[ 2026-06-18 21:08:37,279 ] 107 dagshub - INFO - Repository SivaSundarRM/networksecurity initialized!
+[ 2026-06-18 21:21:49,087 ] 23 root - INFO - Starting data ingestion
+[ 2026-06-18 21:21:53,528 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2026-06-18 21:21:53,528 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-18 21:21:53,529 ] 75 root - INFO - Exporting train and test file path.
+[ 2026-06-18 21:21:53,565 ] 84 root - INFO - Exported train and test file path.
+[ 2026-06-18 21:21:53,565 ] 28 root - INFO - Data ingestion artifact: DataIngestionArtifact(trained_file_path='Artifacts\\06_18_2026_21_08_23\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06_18_2026_21_08_23\\data_ingestion\\ingested\\test.csv')
+[ 2026-06-18 21:21:53,565 ] 34 root - INFO - Starting data validation
+[ 2026-06-18 21:21:53,726 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-18 21:21:53,727 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-18 21:21:53,727 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-18 21:21:53,727 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-18 21:21:53,861 ] 44 root - INFO - Starting data transformation
+[ 2026-06-18 21:21:53,861 ] 40 root - INFO - Initiating data transformation
+[ 2026-06-18 21:21:53,861 ] 42 root - INFO - Reading the train and test file
+[ 2026-06-18 21:21:53,876 ] 46 root - INFO - Splitting input and target feature from train and test dataframe
+[ 2026-06-18 21:21:53,877 ] 55 root - INFO - Applying KNN Imputer to impute missing values in train and test data
+[ 2026-06-18 21:21:53,877 ] 27 root - INFO - Entering the get_data_transformer_object method of Data_Transformation class
+[ 2026-06-18 21:21:53,913 ] 70 root - INFO - Saving transformed train and test array
+[ 2026-06-18 21:21:53,918 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-18 21:21:53,921 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-18 21:21:53,922 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-18 21:21:53,924 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-18 21:21:53,924 ] 53 root - INFO - Starting model trainer
+[ 2026-06-18 21:21:53,924 ] 160 root - INFO - Initiating Model Trainer
+[ 2026-06-18 21:30:46,011 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-18 21:30:46,012 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-18 21:30:46,012 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-18 21:30:46,017 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-18 21:30:46,017 ] 153 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\06_18_2026_21_08_23\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9893682036264099, precision_score=0.9893774984793725, recall_score=0.9893713251922207), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9705771904045826, precision_score=0.9706435729962506, recall_score=0.9706015377657169))
+[ 2026-06-18 21:30:46,018 ] 189 root - INFO - Model Training Completed
+[ 2026-06-18 21:31:57,078 ] 23 root - INFO - Starting data ingestion
+[ 2026-06-18 21:32:00,293 ] 65 root - INFO - Performed train test split on the dataframe
+[ 2026-06-18 21:32:00,293 ] 67 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2026-06-18 21:32:00,293 ] 75 root - INFO - Exporting train and test file path.
+[ 2026-06-18 21:32:00,338 ] 84 root - INFO - Exported train and test file path.
+[ 2026-06-18 21:32:00,339 ] 28 root - INFO - Data ingestion artifact: DataIngestionArtifact(trained_file_path='Artifacts\\06_18_2026_21_08_23\\data_ingestion\\ingested\\train.csv', test_file_path='Artifacts\\06_18_2026_21_08_23\\data_ingestion\\ingested\\test.csv')
+[ 2026-06-18 21:32:00,339 ] 34 root - INFO - Starting data validation
+[ 2026-06-18 21:32:00,435 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-18 21:32:00,435 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-18 21:32:00,435 ] 32 root - INFO - Required number of columns:2
+[ 2026-06-18 21:32:00,435 ] 33 root - INFO - Data frame has columns:31
+[ 2026-06-18 21:32:00,557 ] 44 root - INFO - Starting data transformation
+[ 2026-06-18 21:32:00,557 ] 40 root - INFO - Initiating data transformation
+[ 2026-06-18 21:32:00,557 ] 42 root - INFO - Reading the train and test file
+[ 2026-06-18 21:32:00,572 ] 46 root - INFO - Splitting input and target feature from train and test dataframe
+[ 2026-06-18 21:32:00,573 ] 55 root - INFO - Applying KNN Imputer to impute missing values in train and test data
+[ 2026-06-18 21:32:00,573 ] 27 root - INFO - Entering the get_data_transformer_object method of Data_Transformation class
+[ 2026-06-18 21:32:00,578 ] 70 root - INFO - Saving transformed train and test array
+[ 2026-06-18 21:32:00,582 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-18 21:32:00,585 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-18 21:32:00,585 ] 46 root - INFO - Entered the save_object method of MainUtils class
+[ 2026-06-18 21:32:00,587 ] 50 root - INFO - Exited the save_object method of MainUtils class
+[ 2026-06-18 21:32:00,587 ] 53 root - INFO - Starting model trainer
+[ 2026-06-18 21:32:00,587 ] 160 root - INFO - Initiating Model Trainer
